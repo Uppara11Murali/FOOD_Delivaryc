@@ -227,7 +227,7 @@ showMessage("Your cart is empty");
 return;
 }
 
-window.location.href = "../Contact/contact.html";
+window.location.href = "Contact/contact.html";
 
 }
 
