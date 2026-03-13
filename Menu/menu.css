@@ -1,0 +1,272 @@
+/* ================= RESET ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+line-height:1.6;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+background:#0e0e0e;
+border-bottom:1px solid #333;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+flex-wrap:wrap;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#f8f7f7;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin:0 15px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+color:#ff9800;
+}
+
+/* CART BUTTON */
+
+.cart-view-btn{
+background:#e5e2de;
+color:black;
+border:none;
+padding:8px 16px;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* HAMBURGER */
+
+.hamburger{
+display:none;
+flex-direction:column;
+cursor:pointer;
+}
+
+.hamburger span{
+height:3px;
+width:25px;
+background:white;
+margin:4px;
+}
+
+/* ================= PAGE HEADER ================= */
+
+.page-header{
+text-align:center;
+padding:60px 20px;
+background:#4f4c4c;
+}
+
+.page-header h1{
+font-size:40px;
+color:#ff9800;
+}
+
+.page-header p{
+color:#bbb;
+margin-top:10px;
+}
+
+/* ================= MENU SECTION ================= */
+
+.menu-section{
+padding:50px 40px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+/* CATEGORY */
+
+.category-title{
+font-size:26px;
+color:#ff9800;
+margin:40px 0 20px;
+}
+
+/* GRID */
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+/* MENU CARD */
+
+.menu-item{
+background:#605d5d;
+padding:15px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.menu-item:hover{
+transform:translateY(-5px);
+box-shadow:0 6px 20px rgba(0,0,0,0.8);
+}
+
+.menu-item img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.menu-item h3{
+margin:10px 0;
+}
+
+.price{
+color:#ff9800;
+font-weight:600;
+margin-bottom:10px;
+}
+
+/* ADD BUTTON */
+
+.add-btn{
+background:#ff9800;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+cursor:pointer;
+font-weight:600;
+}
+
+.add-btn:hover{
+background:#ffa726;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+background:#bbb6b6;
+text-align:center;
+padding:25px;
+margin-top:40px;
+color:#0f0e0e;
+}
+
+.nav-links.show{
+display:flex;
+flex-direction:column;
+background:black;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+flex-direction:column;
+width:100%;
+background:#000;
+margin-top:10px;
+}
+
+.nav-links li{
+text-align:center;
+padding:10px 0;
+}
+
+.hamburger{
+display:flex;
+}
+
+.page-header h1{
+font-size:30px;
+}
+
+.menu-section{
+padding:40px 20px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:480px){
+
+.logo{
+font-size:18px;
+}
+
+.page-header{
+padding:40px 15px;
+}
+
+.page-header h1{
+font-size:24px;
+}
+
+.page-header p{
+font-size:14px;
+}
+
+.category-title{
+font-size:20px;
+}
+
+.menu-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ================= VERY SMALL SCREEN ================= */
+
+@media(max-width:320px){
+
+.page-header h1{
+font-size:20px;
+}
+
+.page-header p{
+font-size:12px;
+}
+
+}

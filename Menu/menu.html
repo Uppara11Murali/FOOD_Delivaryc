@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sandhya Food Kitchen's - Menu</title>
+
+<meta name="description" content="Explore delicious homemade food menu at Sandhya Food Kitchen's">
+
+<link rel="stylesheet" href="menu.css">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<nav class="navbar">
+
+<div class="logo">Sandhya Food Kitchen's</div>
+
+<ul class="nav-links">
+<li><a href="../index.html">Home</a></li>
+<li><a href="menu.html" class="active">Menu</a></li>
+<li><a href="../Offers/offers.html">Offers</a></li>
+<li><a href="../Contact/contact.html">Contact</a></li>
+</ul>
+
+<button onclick="showCart()" class="cart-view-btn">
+🛒 <span id="cart-count">0</span>
+</button>
+
+<div class="hamburger" id="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- ================= PAGE HEADER ================= -->
+
+<section class="page-header">
+
+<div class="container">
+<h1>Delicious Food Menu</h1>
+<p>Choose from the best homemade food items.</p>
+</div>
+
+</section>
+
+
+<!-- ================= MENU SECTION ================= -->
+
+<section class="menu-section">
+
+<div class="container">
+
+<!-- ================= BREAKFAST ================= -->
+
+<h2 class="category-title">🍳 Breakfast</h2>
+
+<div class="menu-grid">
+
+<article class="menu-item" data-name="Soft Idli" data-price="40">
+<img src="Soft Idli.jpg" alt="Soft Idli" loading="lazy">
+<h3>Soft Idli</h3>
+<p class="price">₹40</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+<article class="menu-item" data-name="Crispy Dosa" data-price="50">
+<img src="Crispy Dosa.jpg" alt="Crispy Dosa" loading="lazy">
+<h3>Crispy Dosa</h3>
+<p class="price">₹50</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+<article class="menu-item" data-name="Poori Curry" data-price="60">
+<img src="Poori Curry.jpg" alt="Poori Curry" loading="lazy">
+<h3>Poori Curry</h3>
+<p class="price">₹60</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+<article class="menu-item" data-name="Upma" data-price="40">
+<img src="Upma.jpg" alt="Upma" loading="lazy">
+<h3>Upma</h3>
+<p class="price">₹40</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+</div>
+
+
+<!-- ================= TIFFINS ================= -->
+
+<h2 class="category-title">🥞 Tiffins</h2>
+
+<div class="menu-grid">
+
+<article class="menu-item" data-name="Masala Dosa" data-price="70">
+<img src="Masala Dosa.jpg" alt="Masala Dosa" loading="lazy">
+<h3>Masala Dosa</h3>
+<p class="price">₹70</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+<article class="menu-item" data-name="Set Dosa" data-price="50">
+<img src="Set Dosa.jpg" alt="Set Dosa" loading="lazy">
+<h3>Set Dosa</h3>
+<p class="price">₹50</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+</div>
+
+
+<!-- ================= LUNCH ================= -->
+
+<h2 class="category-title">🍛 Lunch</h2>
+
+<div class="menu-grid">
+
+<article class="menu-item" data-name="South Indian Meals" data-price="120">
+<img src="South Indian Meals.jpg" alt="Meals" loading="lazy">
+<h3>South Indian Meals</h3>
+<p class="price">₹120</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+<article class="menu-item" data-name="Chicken Curry" data-price="150">
+<img src="Chicken Curry.jpg" alt="Chicken Curry" loading="lazy">
+<h3>Chicken Curry</h3>
+<p class="price">₹150</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+</div>
+
+
+<!-- ================= DRINKS ================= -->
+
+<h2 class="category-title">🥤 Drinks</h2>
+
+<div class="menu-grid">
+
+<article class="menu-item" data-name="Tea" data-price="10">
+<img src="Tea.jpg" alt="Tea" loading="lazy">
+<h3>Tea</h3>
+<p class="price">₹10</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+<article class="menu-item" data-name="Coffee" data-price="15">
+<img src="Coffee.jpg" alt="Coffee" loading="lazy">
+<h3>Coffee</h3>
+<p class="price">₹15</p>
+<button class="add-btn">Add to Cart</button>
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+<p>© 2025 Sandhya Food Kitchen's. All Rights Reserved.</p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="menu.js"></script>
+
+</body>
+</html>
