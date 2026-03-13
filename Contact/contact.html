@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Orders</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="logo">SANDHYA Food Kitchen's</div>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Menu/menu.html">Menu</a></li>
+            <li><a href="../Offers/offers.html">Offers</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- BACK BUTTON -->
+    <div class="back-btn-container">
+        <button onclick="history.back()" class="back-btn">⬅ Back</button>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <h1>Contact & Place Your Order</h1>
+        <p>Check your cart items and complete your delivery details.</p>
+    </section>
+
+    <!-- CART SECTION -->
+    <section class="cart-section">
+        <h2>Your Cart 🛒</h2>
+
+        <div id="cart-items">
+
+            <div class="cart-item">
+                <span class="item-name">Veg Cheese Pizza</span>
+                <span class="item-price">₹199</span>
+            </div>
+
+            <div class="cart-item">
+                <span class="item-name">Chicken Burger Combo</span>
+                <span class="item-price">₹249</span>
+            </div>
+
+            <div class="cart-item">
+                <span class="item-name">Chocolate Milkshake</span>
+                <span class="item-price">₹99</span>
+            </div>
+
+        </div>
+
+        <p id="total-price"><strong>Total:</strong> ₹547</p>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact-section">
+        <h2>Delivery & Payment Details</h2>
+
+        <form id="order-form">
+
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required placeholder="Murali">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required placeholder="murali@email.com">
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required placeholder="+91 9800000000">
+            </div>
+
+            <!-- Address -->
+            <div class="form-group">
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" rows="3" required placeholder="Enter your delivery address"></textarea>
+            </div>
+
+            <!-- Payment -->
+            <div class="form-group">
+                <label for="payment">Payment Method:</label>
+                <select id="payment" required>
+                    <option value="">Select Payment</option>
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="upi">UPI</option>
+                    <option value="card">Credit/Debit Card</option>
+                </select>
+            </div>
+
+            <div id="upi-options" style="display:none">
+
+<label>Select UPI App:</label>
+
+<select id="upi-app">
+
+<option value="Google Pay">Google Pay</option>
+<option value="PhonePe">PhonePe</option>
+<option value="Paytm">Paytm</option>
+<option value="BHIM UPI">BHIM UPI</option>
+
+</select>
+
+</div>
+
+            <!-- Submit -->
+            <button type="submit" class="submit-btn">Place Order</button>
+        </form>
+
+        <p id="order-success" class="success-message"></p>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Sandhya Food Kitchen's. All rights reserved.</p>
+</footer>
+
+<script src="contact.js"></script>
+</body>
+</html>
