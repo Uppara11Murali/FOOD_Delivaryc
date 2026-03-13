@@ -1,0 +1,275 @@
+/* ================= RESET ================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#111;
+color:white;
+line-height:1.6;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+background:#000;
+border-bottom:1px solid #333;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#f5f4f3;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin:0 15px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-size:16px;
+transition:0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+color:#ff9800;
+}
+
+/* CART BUTTON */
+
+.cart-view-btn{
+background:#fcfbf9;
+color:black;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* HAMBURGER */
+
+.hamburger{
+display:none;
+flex-direction:column;
+cursor:pointer;
+}
+
+.hamburger span{
+background:white;
+height:3px;
+width:25px;
+margin:4px;
+}
+
+/* ================= OFFERS HEADER ================= */
+
+.offers-header{
+text-align:center;
+padding:60px 20px;
+background:#5e5c5c;
+}
+
+.offers-header h1{
+font-size:40px;
+color:#ff9800;
+margin-bottom:10px;
+}
+
+.offers-header p{
+color:#bbb;
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+/* ================= OFFERS SECTION ================= */
+
+.offers-section{
+padding:50px 40px;
+}
+
+.section-title{
+font-size:28px;
+color:#ff9800;
+margin-bottom:20px;
+}
+
+/* GRID */
+
+.offers-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+/* ================= OFFER CARD ================= */
+
+.offer-box{
+background:#676666;
+border-radius:12px;
+padding:15px;
+text-align:center;
+transition:0.3s;
+box-shadow:0 4px 15px rgba(0,0,0,0.6);
+}
+
+.offer-box:hover{
+transform:translateY(-5px);
+box-shadow:0 6px 20px rgba(0,0,0,0.9);
+}
+
+.offer-box img{
+width:100%;
+height:170px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.offer-box h3{
+margin:10px 0;
+}
+
+.offer-box p{
+font-size:14px;
+margin-bottom:8px;
+}
+
+.offer-price{
+color:#ff9800;
+font-weight:bold;
+}
+
+/* BUTTON */
+
+.offer-btn{
+background:#ff9800;
+color:black;
+border:none;
+padding:8px 16px;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.offer-btn:hover{
+background:#ffa726;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+background:#d3cfcf;
+text-align:center;
+padding:25px;
+margin-top:40px;
+color:#070707;
+}
+
+.nav-links.show{
+display:flex;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:black;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:768px){
+
+.nav-links{
+position:absolute;
+top:70px;
+left:0;
+background:#000;
+width:100%;
+flex-direction:column;
+display:none;
+}
+
+.nav-links li{
+text-align:center;
+padding:12px;
+}
+
+.hamburger{
+display:flex;
+}
+
+.offers-header h1{
+font-size:30px;
+}
+
+.offers-section{
+padding:40px 20px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:480px){
+
+.logo{
+font-size:18px;
+}
+
+.offers-header{
+padding:40px 15px;
+}
+
+.offers-header h1{
+font-size:24px;
+}
+
+.section-title{
+font-size:22px;
+}
+
+.offers-container{
+grid-template-columns:1fr;
+}
+
+}
+
+/* ================= VERY SMALL SCREEN ================= */
+
+@media(max-width:320px){
+
+.offers-header h1{
+font-size:20px;
+}
+
+.offers-header p{
+font-size:12px;
+}
+
+}
